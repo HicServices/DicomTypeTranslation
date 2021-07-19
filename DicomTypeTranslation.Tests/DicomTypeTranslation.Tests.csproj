@@ -34,6 +34,9 @@
     <Content Include="..\Templates\MR.it" Link="Templates\MR.it">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\Templates\XA.it" Link="Templates\MR.it">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="..\Templates\OTHER.it" Link="Templates\OTHER.it">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -66,6 +69,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\Templates\SR.it" Link="Templates\SR.it">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Templates\XA.it" Link="Templates\XA.it">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Templates\US.it" Link="Templates\US.it">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

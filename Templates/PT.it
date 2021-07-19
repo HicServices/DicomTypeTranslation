@@ -117,6 +117,9 @@ Tables:
     AllowNulls: true
 - TableName: ImageTable
   Columns:
+  - ColumnName: PatientID
+    AllowNulls: true
+  - ColumnName: StudyInstanceUID
   - ColumnName: SeriesInstanceUID
   - ColumnName: SOPInstanceUID
     IsPrimaryKey: true
@@ -169,4 +172,8 @@ Tables:
   - ColumnName: LossyImageCompressionRetired
     AllowNulls: true
   - ColumnName: ScanOptions
+    AllowNulls: true
+  - ColumnName: DicomFileSize
+    Type:
+      CSharpType: System.Int64
     AllowNulls: true

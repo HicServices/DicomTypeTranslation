@@ -74,3 +74,7 @@ Tables:
     AllowNulls: true
   - ColumnName: PhotometricInterpretation
     AllowNulls: true
+  - ColumnName: DicomFileSize
+    Type:
+      CSharpType: System.Int64
+    AllowNulls: true

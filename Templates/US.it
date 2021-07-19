@@ -1,0 +1,339 @@
+DatabaseType: MicrosoftSQLServer
+Tables:
+- TableName: StudyTable
+  Columns:
+  - ColumnName: PatientID
+    Type: 
+    AllowNulls: false
+    IsPrimaryKey: false
+  - ColumnName: StudyInstanceUID
+    Type: 
+    AllowNulls: false
+    IsPrimaryKey: true
+  - ColumnName: StudyDate
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: StudyTime
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ModalitiesInStudy
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: StudyDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: AccessionNumber
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PatientSex
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PatientAge
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PatientBirthDate
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: NumberOfStudyRelatedInstances
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+- TableName: SeriesTable
+  Columns:
+  - ColumnName: StudyInstanceUID
+    Type: 
+    AllowNulls: false
+    IsPrimaryKey: false
+  - ColumnName: SeriesInstanceUID
+    Type: 
+    AllowNulls: false
+    IsPrimaryKey: true
+  - ColumnName: Modality
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: InstitutionName
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ProtocolName
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ProcedureCodeSequence_CodeValue
+    Type:
+      CSharpType: System.String
+      Size: &o0
+        NumbersBeforeDecimalPlace: 0
+        NumbersAfterDecimalPlace: 0
+        IsEmpty: true
+      Width: 100
+      Unicode: false
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PerformedProcedureStepDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SeriesDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SeriesDate
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SeriesTime
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: BodyPartExamined
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: DeviceSerialNumber
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SeriesNumber
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: MRAcquisitionType
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: AngioFlag
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: MagneticFieldStrength
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: TransmitCoilName
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PatientPosition
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: RequestedProcedureDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ClinicalTrialTimePointID
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ClinicalTrialTimePointDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LongitudinalTemporalOffsetFromEvent
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LongitudinalTemporalEventType
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: AdmittingDiagnosesDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+- TableName: ImageTable
+  Columns:
+  - ColumnName: SeriesInstanceUID
+    Type: 
+    AllowNulls: false
+    IsPrimaryKey: false
+  - ColumnName: SOPInstanceUID
+    Type: 
+    AllowNulls: false
+    IsPrimaryKey: true
+  - ColumnName: BurnedInAnnotation
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: RelativeFileArchiveURI
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: MessageGuid
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ImageType
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ManufacturerModelName
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: Manufacturer
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SoftwareVersions
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PhotometricInterpretation
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: AcquisitionNumber
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: AcquisitionDate
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: AcquisitionTime
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ImagePositionPatient
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: ImageOrientationPatient
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PixelSpacing
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: FieldOfViewDimensions
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: FieldOfViewDimensionsInFloat
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: DerivationDescription
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LossyImageCompression
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LossyImageCompressionMethod
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LossyImageCompressionRatio
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LossyImageCompressionRetired
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: LongitudinalTemporalInformationModified
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: Rows
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: Columns
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PatientID
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: StudyInstanceUID
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: DicomFileSize
+    Type:
+      CSharpType: System.Int64
+      Size: *o0
+      Width: 
+      Unicode: false
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: WindowCenter
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: WindowWidth
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: InstanceNumber
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: TransducerType
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: MechanicalIndex
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: TransducerData
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: UltrasoundColorDataPresent
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: Laterality
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SecondaryCaptureDeviceID
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: DateOfSecondaryCapture
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: TimeOfSecondaryCapture
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SecondaryCaptureDeviceManufacturer
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SecondaryCaptureDeviceManufacturerModelName
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SecondaryCaptureDeviceSoftwareVersions
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: PlanarConfiguration
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false
+  - ColumnName: SamplesPerPixel
+    Type: 
+    AllowNulls: true
+    IsPrimaryKey: false

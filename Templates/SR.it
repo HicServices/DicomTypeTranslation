@@ -142,4 +142,8 @@ Tables:
       Size:
         IsEmpty: true
       Width: 500
+  - ColumnName: DicomFileSize
+    Type:
+      CSharpType: System.Int64
+    AllowNulls: true
  
